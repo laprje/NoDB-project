@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 function Header() {
@@ -8,16 +8,18 @@ function Header() {
         <div>
             <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"></link>
             <header className="title">NBA Roster</header>
-            <br/>
-            <nav>
-                <Link className="link" to="/">Your Roster</Link>
-            </nav>
-            <br/>
-            <nav>
-                <Link className="link" to="/draft">Sign New Players</Link>
+            <br />
+            <div className="nav-container">
+                <nav>
+                    <Link className="link" to="/">Your Roster</Link>
                 </nav>
-            <br/>
-            <br/>
+                <br />
+                <nav>
+                    <Link className="link" to="/draft">Sign New Players</Link>
+                </nav>
+            </div>
+            <br />
+            <br />
         </div>
     )
 }

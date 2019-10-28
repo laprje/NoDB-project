@@ -5,6 +5,8 @@
     align-items: center;
     margin: 20px;
     font-family: 'Ubuntu', sans-serif;
+    background: #9a9a9a;
+    border-radius: 10px;
 }
 
 .player button{
@@ -19,4 +21,16 @@ h5 {
     border: red 2px;
     font-family: 'Ubuntu', sans-serif;
     margin-top: 0px;
+}
+
+hr {
+    color: black;
+}
+
+.player .trade-btn {
+    border: none;
+    background: rgb(219, 22, 71);
+    color: white;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
 }
