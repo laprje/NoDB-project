@@ -63,6 +63,18 @@ const tradePlayers = [
         number: "23",
         image: "https://pm1.narvii.com/6859/fb0b2b16c0021060c4bcf75bd78144aef44761d0v2_128.jpg",
         id: ''
+    },
+    {
+        name: "Kyrie Irving",
+        number: "11",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6442.png&h=96&w=96&scale=crop",
+        id: ''
+    },
+    {
+        name: "Kevin Love",
+        number: '0',
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3449.png&h=96&w=96&scale=crop",
+        id: ''
     }
 ]
 
