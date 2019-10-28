@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
     return (
-        <div>
+        <div className="header">
             <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"></link>
             <header className="title">NBA Roster</header>
             <br />

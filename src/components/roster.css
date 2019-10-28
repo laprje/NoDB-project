@@ -1,5 +1,12 @@
 .roster {
     background: #cecece;
     border-radius: 5px;
-    min-width: 400px;
+    width: 400px;
+}
+
+@media (max-width: 400px) {
+    .roster{
+        max-width: 300px;
+        
+    }
 }

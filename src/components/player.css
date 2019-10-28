@@ -9,6 +9,10 @@
     border-radius: 10px;
 }
 
+button:active{
+    color: lightblue;
+}
+
 .player button{
     border: none;
     background: rgb(0, 107, 183);
@@ -18,14 +22,10 @@
 }
 
 h5 {
-    border: red 2px;
     font-family: 'Ubuntu', sans-serif;
     margin-top: 0px;
 }
 
-hr {
-    color: black;
-}
 
 .player .waive-btn {
     border: none;
@@ -33,4 +33,13 @@ hr {
     color: white;
     border-radius: 5px;
     font-family: 'Ubuntu', sans-serif;
+}
+
+@media (max-width: 400px) {
+    .player img{
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+        padding: 0 75px;
+    }
 }
