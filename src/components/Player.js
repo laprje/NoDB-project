@@ -43,7 +43,9 @@ export default class Player extends Component {
                 <br />
                 <button onClick={() => this.toggleEdit()}>Change Number</button>
                 <br />
-                <button className='trade-btn' onClick={() => this.props.tradeFn(this.props.playerObj.id)}>Trade Player</button>
+                <button onClick={() => this.props.tradeFn(this.props.playerObj.id)}>Trade Player</button>
+                <br />
+                <button className='waive-btn' onClick={() => this.props.waiveFn(this.props.playerObj.id)}>Waive Player</button>
                 <br />
             </div>
         )

@@ -48,7 +48,23 @@ const roster = [
         id: 7
     }
 ];
+
 let id = 8;
+
+const tradePlayers = [
+    {
+        name: "Jonchu",
+        number: "69",
+        image: "https://emoji.slack-edge.com/T039C2PUY/jonchu/309527375ff8c3d6.png",
+        id: ''
+    },
+    {
+        name: "Michael Jordan",
+        number: "23",
+        image: "https://pm1.narvii.com/6859/fb0b2b16c0021060c4bcf75bd78144aef44761d0v2_128.jpg",
+        id: ''
+    }
+]
 
 module.exports = {
     addPlayer: (req, res) => {
@@ -56,7 +72,7 @@ module.exports = {
         const newPlayer = {...req.body, id}
         roster.push(newPlayer);
         id++;
-        console.log(roster)
+        // console.log(roster)
         res.status(200).send(roster)
     },
 
@@ -75,10 +91,21 @@ module.exports = {
         res.status(200).send(roster);
     },
 
-    trade: (req, res) => {
-        const {id} = req.params;
-        const index = roster.findIndex(el => el.id === +id);
+    waive: (req, res) => {
+        const {elementId} = req.params;
+        const index = roster.findIndex(el => el.id === +elementId);
         roster.splice(index, 1);
+        res.status(200).send(roster);
+    },
+
+
+    trade: (req, res) => {
+        const {elementId} = req.params;
+        const index = roster.findIndex(el => el.id === +elementId)
+        const tradePlayer = tradePlayers[Math.floor(Math.random() * 2)];
+        roster.splice(index, 1, {...tradePlayer})
+        roster[index].id = id++;
+        console.log(roster[index]);
         res.status(200).send(roster);
     }
 }
