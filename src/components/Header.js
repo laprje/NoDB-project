@@ -12,6 +12,7 @@ function Header() {
                 <Link className="link" to="/">Your Roster</Link>
                 <Link className="link" to="/draft">Sign New Players</Link>
             </nav>
+            <br/>
         </div>
     )
 }
