@@ -114,7 +114,7 @@ module.exports = {
     trade: (req, res) => {
         const {elementId} = req.params;
         const index = roster.findIndex(el => el.id === +elementId)
-        const tradePlayer = tradePlayers[Math.floor(Math.random() * 2)];
+        const tradePlayer = tradePlayers[Math.floor(Math.random() * 5)];
         roster.splice(index, 1, {...tradePlayer})
         roster[index].id = id++;
         console.log(roster[index]);
