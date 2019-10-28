@@ -33,7 +33,7 @@ export default class Player extends Component {
                 <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"></link>
                 <h3>{this.props.playerObj.name}</h3>
                 <h5>#{this.props.playerObj.number}</h5>
-                <img className="player-image" src={this.props.playerObj.image} alt="player-image"/>
+                <img className="player-image" src={this.props.playerObj.image} alt={this.props.playerObj.name}/>
                 {this.state.editToggle ?
                     <div className="edit-input">
                         <br />
