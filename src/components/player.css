@@ -1,0 +1,19 @@
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.player button{
+    border: none;
+    background: rgb(0, 107, 183);
+    color: white;
+    border-radius: 5px;
+}
+
+h5 {
+    border: red 2px;
+}
