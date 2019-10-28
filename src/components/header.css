@@ -7,8 +7,20 @@
 
 .link {
     text-decoration: none;
-    color: rgb(0, 107, 183);
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.link:hover {
+    color: red;
+}
+
+nav {
+    background: rgb(0, 107, 183);
+    color: white;
+    border-radius: 3px;
+    
 }

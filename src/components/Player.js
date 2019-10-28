@@ -30,6 +30,7 @@ export default class Player extends Component {
     render() {
         return(
             <div className="player">
+                <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"></link>
                 <h3>{this.props.playerObj.name}</h3>
                 <h5>#{this.props.playerObj.number}</h5>
                 <img src={this.props.playerObj.image} />

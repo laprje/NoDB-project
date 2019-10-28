@@ -1,9 +1,13 @@
+
+
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #DDDDDD
-  
+  background: #000000;
+  background-image: url("http://wallpaperask.com/wp-content/uploads/Basketball-Court-Background-HD.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 

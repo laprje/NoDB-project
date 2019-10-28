@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 20px;
-    
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .player button{
@@ -12,8 +12,11 @@
     background: rgb(0, 107, 183);
     color: white;
     border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 h5 {
     border: red 2px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0px;
 }

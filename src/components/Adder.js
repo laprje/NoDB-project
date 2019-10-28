@@ -30,24 +30,25 @@ export default class Adder extends Component {
 
     render() {
         console.log(this.state);
-        
-        return(
+
+        return (
             <div className="adder">
+                <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"></link>
                 <input
                     placeholder="Add a Player Name"
                     type="text"
                     name="name"
                     value={this.state.nameInput}
                     onChange={(e) => this.handleChange(e)}
-                    />
-                <input 
+                />
+                <input
                     placeholder="Add a Number"
                     type="text"
                     name="number"
                     value={this.state.numberInput}
                     onChange={(e) => this.handleChange(e)}
                 />
-                <input 
+                <input
                     placeholder="Add an Image URL"
                     type="text"
                     name="image"

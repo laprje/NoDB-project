@@ -37,7 +37,7 @@ export default class Roster extends Component {
     }
 
     trade(id) {
-        axios  
+        axios
             .delete(`/api/players/${id}`)
             .then(res => {
                 console.log(res.data)
@@ -52,16 +52,17 @@ export default class Roster extends Component {
 
     render() {
         console.log(this.state)
-        return(
+        return (
             <div className="roster">
-              {this.state.players.map (el => (
-                <Player playerObj={el} key={el.id}
-                changeNumberFn={this.changeNumber}
-                tradeFn={this.trade}
-                />
+                <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"></link>
+                {this.state.players.map(el => (
+                    <Player playerObj={el} key={el.id}
+                        changeNumberFn={this.changeNumber}
+                        tradeFn={this.trade}
+                    />
                 )
                 )}
-                <br/>
+                <br />
             </div>
         )
     }

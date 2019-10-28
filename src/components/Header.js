@@ -8,10 +8,15 @@ function Header() {
         <div>
             <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"></link>
             <header className="title">NBA Roster</header>
+            <br/>
             <nav>
                 <Link className="link" to="/">Your Roster</Link>
-                <Link className="link" to="/draft">Sign New Players</Link>
             </nav>
+            <br/>
+            <nav>
+                <Link className="link" to="/draft">Sign New Players</Link>
+                </nav>
+            <br/>
             <br/>
         </div>
     )
